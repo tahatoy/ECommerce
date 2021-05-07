@@ -1,5 +1,7 @@
 package Business.Concretes;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -8,6 +10,7 @@ import Entities.Concretes.User;
 
 public class ValidationManager implements ValidationService {
 
+	
 	@Override
 	public boolean passwordValidator(User user) {
 		if(user.getPassword().length()>6) 
@@ -37,5 +40,12 @@ public class ValidationManager implements ValidationService {
 			return false;
 	
 	}
+
+	@Override
+	public boolean checkEmail(User user, String email) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 
 }

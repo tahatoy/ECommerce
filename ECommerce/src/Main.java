@@ -28,15 +28,23 @@ public class Main {
 			googleAuthService.registerWithGoogle(taha);
 			googleAuthService.loginWithGoogle(taha);
 	//------------------------------------------------------------------------------------------------------
-			System.out.println("------------------------");
 			
-			User oguzhan=new User(2,"Oguzhan","Ozturk","oguzhannoguzhan.com","123456789");//@ kullanmadýðýmýz için hata vericek
+			System.out.println();
+			System.out.println("-----------------------");
+			System.out.println();
+			
+			User oguzhan=new User(2,"Oguzhan","Ozturk","oguzhnannn.com","123456789");//@ kullanmadýðýmýz için hata vericek
 			userService.register(oguzhan);
 			
-			EmailService eMailService2=new EmailManager();
-			eMailService2.send();
 			
-	
+			System.out.println();
+			System.out.println("-----------------------");
+			System.out.println();
+			
+			User mehmet=new User(3,"Cihan","Gemi","taha@taha.com","12345678901");//ayný e-posta kullandýðýmýz için hata vericek
+			userService.register(mehmet);
+			
+			
 			
 			
 			
